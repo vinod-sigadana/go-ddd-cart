@@ -1,0 +1,10 @@
+{
+  "account_id":"201077667315",
+  "is_local":true,
+  "key":"AKIAIJPJ5ARHWPWNIB2Q",
+  "secret":"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",
+  "region":"us-east-1",
+  "local_endpoint":"http://localhost:8000",
+  "log_level":"Error",
+  "log_format_type":"json"
+}
