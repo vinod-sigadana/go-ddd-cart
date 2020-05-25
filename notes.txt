@@ -1,6 +1,0 @@
-export GOFLAGS=" -mod=readonly"
-
-git commit --config 'credential.helper=!aws codecommit --profile ita --region us-east-2 credential-helper $@' --config 'credential.UseHttpPath=true' -m "initial commit"
-
-cd ~/go/src/github.com/jeff/iTradeAnything/Services/infrastructure/db/dynamodb_local_latest
-java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
