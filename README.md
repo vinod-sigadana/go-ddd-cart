@@ -3,15 +3,11 @@ sample ddd shopping cart, work in progress.
 
 would love help to continue to make this a working ddd example with at lease a few boundaries and proper golang "best practices".  There is a lot more to do, and lots of refactor my "Janky" code.
 
-
-
-
-
 project structure
 application
 client
 db
->>this is where the dynamodb local stuff will go.
+-----this is where the dynamodb local stuff will go.
 domain
 infrastructure
 model
