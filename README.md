@@ -11,8 +11,6 @@ client
 
 db
 
------this is where the dynamodb local stuff will go.
-
 domain
 
 infrastructure
@@ -23,10 +21,8 @@ shared
 
 the current  infra repo test uses dynamodb local, although it could easily use a mock using the provided interface.
 
-to install dynamodb local go here https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
+to setup the dynamo db local requirements to run the tests, download this file: https://s3.us-west-2.amazonaws.com/dynamodb-local/dynamodb_local_latest.zip
 
-put it in a root folder called db.
+then take only the DynamoDBLocal_lib folder from there, and past that folder into the db/dynamodb_local_latest folder, which will give you the core files but also use the needed static schema.  
 
-before running the app (tests) run this cmd java to load an in memory db -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
-
-it will load in memory and use port 8000 as default.
+Before running the tests you will then go to the db/dynamodb_local_lastest folder and run the following java commmand to start/load the db info memtory: java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
