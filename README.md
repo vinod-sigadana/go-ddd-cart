@@ -1,6 +1,8 @@
 # go-ddd-cart
 sample ddd shopping cart, work in progress.
 
+would love help to continue to make this a working ddd example with at lease a few boundaries and proper golang "best practices".  There is a lot more to do, and lots of refactor my "Janky" code.
+
 the current  infra repo test uses dynamodb local, although it could easily use a mock using the provided interface.
 
 to install dynamodb local go here https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
